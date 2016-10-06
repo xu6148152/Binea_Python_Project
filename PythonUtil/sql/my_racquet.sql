@@ -1,0 +1,1 @@
+CREATE TABLE "Racquet" ("_id" INTEGER NOT NULL,"Make_ID" int(255,0),"Model_ID" int(255,0),"Make_Name" TEXT(255,0),"Model_Name" TEXT(255,0),"Type_1" int(255,0),"Type_2" int(255,0),"Length" REAL(255,0),"Icon" TEXT(255,0));
