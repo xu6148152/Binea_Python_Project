@@ -2,79 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07202282-b2ee-4562-ae2b-5933b9f87a29" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz10.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz11.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz14.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz15.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz16.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz17.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz18.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz19.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz20.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz21.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz22.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz23.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz24.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz25.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz26.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz27.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz28.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz29.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz30.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz31.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz32.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz33.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz34.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz35.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz6.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz7.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz8.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz9.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers10.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers11.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers12.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers13.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers14.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers15.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers16.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers17.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers18.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers19.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers20.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers21.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers22.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers23.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers24.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers25.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers26.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers27.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers28.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers29.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers30.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers31.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers32.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers33.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers34.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers35.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers4.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers5.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers6.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers7.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers8.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/capitalsquiz_answers9.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/randomQuizGenerator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/regex/stripTest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/mcb.bak" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/mcb.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/mcb.dir" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/file/mcb.pyw" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="automate the boring stuff with python.iws" />
@@ -89,6 +20,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/automate the boring stuff with python$StrongCommand.coverage" NAME="StrongCommand Coverage Results" MODIFIED="1479656684678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regex" />
+    <SUITE FILE_PATH="coverage/automate the boring stuff with python$mcb_pyw.coverage" NAME="mcb.pyw Coverage Results" MODIFIED="1479740559401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/file" />
     <SUITE FILE_PATH="coverage/automate the boring stuff with python$randomQuizGenerator.coverage" NAME="randomQuizGenerator Coverage Results" MODIFIED="1479739664367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/file" />
     <SUITE FILE_PATH="coverage/automate the boring stuff with python$phoneAndEmail.coverage" NAME="phoneAndEmail Coverage Results" MODIFIED="1479654086565" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/regex" />
     <SUITE FILE_PATH="coverage/automate the boring stuff with python$string_test.coverage" NAME="string_test Coverage Results" MODIFIED="1479570520167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/string" />
@@ -122,68 +54,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="randomQuizGenerator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="randomQuizGenerator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/file/randomQuizGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+            <state relative-caret-position="271">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="capitalsquiz1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz1.txt">
+      <file leaf-file-name="mcb.pyw" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file/mcb.pyw">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+            <state relative-caret-position="207">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="capitalsquiz2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capitalsquiz3.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz3.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capitalsquiz_answers1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capitalsquiz_answers2.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers2.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="capitalsquiz_answers3.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers3.txt">
+      <file leaf-file-name="shelve.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/shelve.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -195,7 +87,7 @@
       <file leaf-file-name="builtins.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-555568213/builtins.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="114747">
               <caret line="4989" column="25" selection-start-line="4989" selection-start-column="25" selection-end-line="4989" selection-end-column="25" />
               <folding />
             </state>
@@ -222,6 +114,7 @@
         <option value="$PROJECT_DIR$/regex/StrongCommand.py" />
         <option value="$PROJECT_DIR$/regex/stripTest.py" />
         <option value="$PROJECT_DIR$/file/randomQuizGenerator.py" />
+        <option value="$PROJECT_DIR$/file/mcb.pyw" />
       </list>
     </option>
   </component>
@@ -320,7 +213,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
-  <component name="RunManager" selected="Python.randomQuizGenerator">
+  <component name="RunManager" selected="Python.mcb.pyw">
     <configuration default="false" name="string_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -389,6 +282,24 @@
       <module name="automate the boring stuff with python" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/randomQuizGenerator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="mcb.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/file" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="automate the boring stuff with python" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/file/mcb.pyw" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -601,18 +512,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.string_test" />
       <item index="1" class="java.lang.String" itemvalue="Python.phoneAndEmail" />
       <item index="2" class="java.lang.String" itemvalue="Python.StrongCommand" />
       <item index="3" class="java.lang.String" itemvalue="Python.randomQuizGenerator" />
+      <item index="4" class="java.lang.String" itemvalue="Python.mcb.pyw" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.randomQuizGenerator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.StrongCommand" />
-        <item index="2" class="java.lang.String" itemvalue="Python.phoneAndEmail" />
-        <item index="3" class="java.lang.String" itemvalue="Python.string_test" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.mcb.pyw" />
+        <item index="1" class="java.lang.String" itemvalue="Python.randomQuizGenerator" />
+        <item index="2" class="java.lang.String" itemvalue="Python.StrongCommand" />
+        <item index="3" class="java.lang.String" itemvalue="Python.phoneAndEmail" />
+        <item index="4" class="java.lang.String" itemvalue="Python.string_test" />
       </list>
     </recent_temporary>
   </component>
@@ -631,15 +544,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585313" sideWeight="0.51666665" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585313" sideWeight="0.5208333" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585313" sideWeight="0.48333332" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33585313" sideWeight="0.47916666" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -671,6 +584,38 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/regex/StrongCommand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/regex/stripTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/randomQuizGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-555568213/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114747">
+          <caret line="4989" column="25" selection-start-line="4989" selection-start-column="25" selection-end-line="4989" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/string/string_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -839,7 +784,7 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2016.2/system/python_stubs/-555568213/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="114747">
           <caret line="4989" column="25" selection-start-line="4989" selection-start-column="25" selection-end-line="4989" selection-end-column="25" />
           <folding />
         </state>
@@ -861,58 +806,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz1.txt" />
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz2.txt" />
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz3.txt" />
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers1.txt" />
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers2.txt" />
+    <entry file="file://$PROJECT_DIR$/file/capitalsquiz_answers3.txt" />
     <entry file="file://$PROJECT_DIR$/file/randomQuizGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+        <state relative-caret-position="271">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/shelve.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file/mcb.pyw">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding />
         </state>
       </provider>
