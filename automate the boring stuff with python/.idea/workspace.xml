@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07202282-b2ee-4562-ae2b-5933b9f87a29" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/auto_play_2024.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/parseHtml.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/webbrowser.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/automate the boring stuff with python.iml" afterPath="$PROJECT_DIR$/.idea/automate the boring stuff with python.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/requestTest.py" afterPath="$PROJECT_DIR$/web/requestTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../PythonCookbook/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../PythonCookbook/.idea/workspace.xml" />
     </list>
     <ignored path="automate the boring stuff with python.iws" />
     <ignored path=".idea/workspace.xml" />
