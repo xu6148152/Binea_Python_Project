@@ -163,10 +163,12 @@ def test_combinations():
     for c in combinations_with_replacement(items, 3):
         print(c)
 
+
 def test_enumerate():
     my_list = ['a', 'b', 'c']
     for idx, val in enumerate(my_list):
         print(idx, val)
+
 
 def test_zip():
     xpts = [1, 5, 4, 2, 10, 7]
@@ -177,12 +179,14 @@ def test_zip():
     for i in zip_longest(xpts, ypts):
         print(i)
 
+
 def test_chain():
     from itertools import chain
     a = [1, 2, 3, 4]
     b = ['x', 'y', 'z']
     for x in chain(a, b):
         print(x)
+
 
 def flatten(items, ignore_type=(str, bytes)):
     from collections import Iterable
@@ -191,6 +195,7 @@ def flatten(items, ignore_type=(str, bytes)):
             yield from flatten(x)
         else:
             yield x
+
 
 def test_flatten():
     items = [1, 2, [3, 4, [5, 6], 7], 8]
@@ -201,6 +206,7 @@ def test_flatten():
     for x in flatten(items):
         print(x)
 
+
 def test_heap_merge():
     import heapq
     a = [1, 4, 7, 10]
@@ -208,11 +214,13 @@ def test_heap_merge():
     for c in heapq.merge(a, b):
         print(c)
 
+
 def test_iter_replace_while():
     import sys
     f = open('./dropwhile_test.py')
     for chunk in iter(lambda: f.read(10), ''):
         sys.stdout.write(chunk)
+
 
 if __name__ == '__main__':
     test_iter_replace_while()
