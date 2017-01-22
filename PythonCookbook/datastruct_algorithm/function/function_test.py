@@ -1,5 +1,7 @@
 #! python3
 # -*- encoding: utf-8 -*-
+from datastruct_algorithm.function.async import inlined_async, Async
+
 
 def avg(first, *rest):
     return (first + sum(rest)) / (1 + len(rest))
@@ -111,5 +113,59 @@ def test_apply_async():
     apply_async(add, (2, 3), callback=handler.send)
 
 
+@inlined_async
+def test():
+    r = yield Async(add, (2, 3))
+    print(r)
+    r = yield Async(add, ('hello', 'world'))
+    print(r)
+    for n in range(10):
+        r = yield Async(add, (n, n))
+        print(r)
+    print('Done')
+
+
+def sample():
+    n = 0
+
+    def func():
+        print('n=', n)
+
+    def get_n():
+        return n
+
+    def set_n(value):
+        nonlocal n
+        n = value
+
+    func.get_n = get_n
+    func.set_n = set_n
+    return func
+
+def test_sample():
+    f = sample()
+    print(f())
+    f.set_n(10)
+    print(f())
+    print(f.get_n())
+
+def test_closure_instance():
+    from datastruct_algorithm.function.closure_instance import Stack
+    # s = Stack()
+    # s.push(10)
+    # s.push(20)
+    # s.push('Hello')
+    # # print(len(s))
+    # print(s.pop())
+    # print(s.pop())
+
+    from timeit import timeit
+    t = Stack()
+    print(timeit('t.push(1); t.pop()', 'from __main__ import t'))
+    from datastruct_algorithm.function.closure_instance import Stack2
+    t = Stack2()
+    print(timeit('t.push(1); t.pop()', 'from __main__ import t'))
+
+
 if __name__ == '__main__':
-    test_apply_async()
+    test_closure_instance()
