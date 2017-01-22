@@ -251,7 +251,7 @@ def test_pandas():
 
     crew_dispatched = rats[rats['Symbol'] == 'FAX']
     print(len(crew_dispatched))
-    
+
 
 if __name__ == '__main__':
     test_pandas()
