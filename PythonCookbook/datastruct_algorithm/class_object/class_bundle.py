@@ -251,6 +251,7 @@ class IStream(metaclass=ABCMeta):
     def write(self, data):
         pass
 
+
 class Descriptor:
     def __init__(self, name=None, **opts):
         self.name = name
@@ -260,6 +261,7 @@ class Descriptor:
     def __set__(self, instance, value):
         instance.__dict__[self.name] = value
 
+
 class Typed(Descriptor):
     expected_type = type(None)
 
@@ -268,11 +270,13 @@ class Typed(Descriptor):
             raise TypeError('expected ' + str(self.expected_type))
         super().__set__(instance, value)
 
+
 class Unsigned(Descriptor):
     def __set__(self, instance, value):
         if value < 0:
             raise ValueError('Expected >= 0')
         super().__set__(instance, value)
+
 
 class MaxSized(Descriptor):
     def __init__(self, name=None, **opts):
@@ -284,3 +288,388 @@ class MaxSized(Descriptor):
         if len(value) >= self.size:
             raise ValueError('size must be < ' + str(self.size))
         super().__set__(instance, value)
+
+
+def Typed(expected_type, cls=None):
+    if cls is None:
+        return lambda cls: Typed(expected_type, cls)
+    super_set = cls.__set__
+
+    def __set__(self, instance, value):
+        if not isinstance(value, expected_type):
+            raise TypeError('expected ' + str(expected_type))
+        super_set(self, instance, value)
+
+    cls.__set__ = __set__
+    return cls
+
+
+def Unsigned(cls):
+    super_set = cls.__set__
+
+    def __set__(self, instance, value):
+        if value < 0:
+            raise ValueError('Expected >= 0')
+        super_set(self, instance, value)
+
+    cls.__set__ = __set__
+    return cls
+
+
+def MaxSized(cls):
+    super_init = cls.__init__
+
+    def __init__(self, name=None, **opts):
+        if 'size' not in opts:
+            raise TypeError('missing size option')
+        super_init(self, name, **opts)
+
+    cls.__init__ = __init__
+
+    super_set = cls.__set__
+
+    def __set__(self, instance, value):
+        if len(value) >= self.size:
+            raise ValueError('size must be < ' + str(self.size))
+        super_set(self, instance, value)
+
+    cls.__set__ = __set__
+    return cls
+
+
+import collections
+import bisect
+
+
+class SortedItems(collections.Sequence):
+    def __init__(self, initial=None):
+        self._items = sorted(initial) if initial is not None else []
+
+    def __getitem__(self, index):
+        return self._items[index]
+
+    def __len__(self):
+        return len(self._items)
+
+    def add(self, item):
+        bisect.insort(self._items, item)
+
+
+class Proxy:
+    def __init__(self, obj):
+        self._obj = obj
+
+    def __getattr__(self, item):
+        print('getattr:', item)
+        return getattr(self._obj, item)
+
+    def __setattr__(self, key, value):
+        if key.startswith('_'):
+            super().__setattr__(key, value)
+        else:
+            print('setattr:', key, value)
+            setattr(self._obj, key, value)
+
+    def __delattr__(self, item):
+        if item.startswith('_'):
+            super().__delattr__(item)
+        else:
+            print('delattr:', item)
+            delattr(self._obj, item)
+
+
+#### Mixins
+class LoggedMappingMixin:
+    '''
+    Add logging to get/set/delete operations for debugging.
+    '''
+
+    __slots__ = ()
+
+    def __getitem__(self, item):
+        print('Getting ' + str(item))
+        return super().__getitem__(item)
+
+    def __setitem__(self, key, value):
+        print('Setting {} = {!r}'.format(key, value))
+        return super().__setitem__(key, value)
+
+    def __delitem__(self, key):
+        print('Deleting ' + str(key))
+        return super().__delitem__(key)
+
+
+class SetOnceMappingMixin:
+    '''
+    Only allow a key to be set once
+    '''
+    __slots__ = ()
+
+    def __setitem__(self, key, value):
+        if key in self:
+            raise KeyError(str(key) + ' already set')
+        return super().__setitem__(key, value)
+
+
+class StringKeyMappingMixin:
+    '''
+    Restrict keys to strings only
+    '''
+    __slots__ = ()
+
+    def __setitem__(self, key, value):
+        if not isinstance(key, str):
+            raise TypeError('keys must be strings')
+        return super().__setitem__(key, value)
+
+
+###### state object
+class ConnectionState:
+    @staticmethod
+    def read(conn):
+        raise NotImplementedError()
+
+    @staticmethod
+    def write(conn, data):
+        raise NotImplementedError()
+
+    @staticmethod
+    def open(conn):
+        raise NotImplementedError()
+
+    @staticmethod
+    def close(conn):
+        raise NotImplementedError()
+
+
+class OpenConnectionState(ConnectionState):
+    @staticmethod
+    def read(conn):
+        print('reading')
+
+    @staticmethod
+    def write(conn, data):
+        print('writing')
+
+    @staticmethod
+    def open(conn):
+        raise RuntimeError('Already open')
+
+    @staticmethod
+    def close(conn):
+        conn.new_state(ClosedConnectionState)
+
+
+class ClosedConnectionState(ConnectionState):
+    @staticmethod
+    def read(conn):
+        raise RuntimeError('Not open')
+
+    @staticmethod
+    def write(conn, data):
+        raise RuntimeError('Not open')
+
+    @staticmethod
+    def open(conn):
+        conn.new_state(OpenConnectionState)
+
+    @staticmethod
+    def close(conn):
+        raise RuntimeError('Already closed')
+
+
+class Connection1:
+    def __init__(self):
+        self.new_state(ClosedConnectionState)
+
+    def new_state(self, newstate):
+        self._state = newstate
+
+    def read(self):
+        return self._state.read(self)
+
+    def write(self, data):
+        return self._state.write(self, data)
+
+    def open(self):
+        return self._state.open(self)
+
+    def close(self):
+        return self._state.close(self)
+
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def __repr__(self):
+        return 'Point({!r:}, {!r:})'.format(self.x, self.y)
+
+    def distance(self, x, y):
+        return math.hypot(self.x - x, self.y - y)
+
+
+#### visitor
+class Node:
+    pass
+
+
+class UnaryOperator(Node):
+    def __init__(self, operand):
+        self.operand = operand
+
+
+class BinaryOperator(Node):
+    def __init__(self, left, right):
+        self.left = left
+        self.right = right
+
+
+class Add(BinaryOperator):
+    pass
+
+
+class Sub(BinaryOperator):
+    pass
+
+
+class Mul(BinaryOperator):
+    pass
+
+
+class Div(BinaryOperator):
+    pass
+
+
+class Negate(BinaryOperator):
+    pass
+
+
+class Number(Node):
+    def __init__(self, value):
+        self.value = value
+
+
+import types
+
+
+class NodeVisitor:
+    def visit(self, node):
+        stack = [node]
+        last_result = None
+        while stack:
+            try:
+                last = stack[-1]
+                if isinstance(last, types.GeneratorType):
+                    stack.append(last.send(last_result))
+                    last_result = None
+                elif isinstance(last, Node):
+                    stack.append(self._visit(stack.pop()))
+                else:
+                    last_result = stack.pop()
+            except StopIteration:
+                stack.pop()
+        return last_result
+
+    def _visit(self, node):
+        methname = 'visit_' + type(node).__name__
+        meth = getattr(self, methname, None)
+        if meth is None:
+            meth = self.generic_visit
+        return meth(node)
+
+    def generic_visit(self, node):
+        raise RuntimeError('No {} method'.format('visit_' + type(node).__name__))
+
+
+class Evaluator(NodeVisitor):
+    def visit_Number(self, node):
+        return node.value
+
+    def visit_Add(self, node):
+        yield (yield node.left) + (yield node.right)
+
+    def visit_Sub(self, node):
+        yield (yield node.left) - (yield node.right)
+
+    def visit_Mul(self, node):
+        yield (yield node.left) * (yield node.right)
+
+    def visit_Div(self, node):
+        yield (yield node.left) / (yield node.right)
+
+    def visit_Negate(self, node):
+        yield -(yield node.operand)
+
+
+class StackCode(NodeVisitor):
+    def generate_code(self, node):
+        self.instructions = []
+        self.visit(node)
+        return self.instructions
+
+    def visit_Number(self, node):
+        self.instructions.append(('PUSH', node.value))
+
+    def binop(self, node, instruction):
+        self.visit(node.left)
+        self.visit(node.right)
+        self.instructions.append((instruction,))
+
+    def visit_Add(self, node):
+        self.binop(node, 'ADD')
+
+    def visit_Sub(self, node):
+        self.binop(node, 'SUB')
+
+    def visit_Mul(self, node):
+        self.binop(node, 'MUL')
+
+    def visit_Div(self, node):
+        self.binop(node, 'DIV')
+
+    def unaryop(self, node, instruction):
+        self.visit(node.operand)
+        self.instructions.append((instruction,))
+
+    def visit_Negate(self, node):
+        self.unaryop(node, 'NEG')
+
+
+#### comparable class
+from functools import total_ordering
+
+
+class Room:
+    def __init__(self, name, length, width):
+        self.name = name
+        self.length = length
+        self.width = width
+        self.square_feet = self.length * self.width
+
+
+@total_ordering
+class House:
+    def __init__(self, name, style):
+        self.name = name
+        self.style = style
+        self.rooms = list()
+
+    @property
+    def living_space_footage(self):
+        return sum(r.square_feet for r in self.rooms)
+
+    def add_room(self, room):
+        self.rooms.append(room)
+
+    def __str__(self):
+        return '{}: {} square foot {}'.format(self.name, self.living_space_footage, self.style)
+
+    def __eq__(self, other):
+        return self.living_space_footage == other.living_space_footage
+
+    def __lt__(self, other):
+        return self.living_space_footage < other.living_space_footage
+
+
