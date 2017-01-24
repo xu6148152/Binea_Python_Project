@@ -1,7 +1,7 @@
 #! python3
 # -*- encoding: utf-8 -*-
 def test_repr_str():
-    from datastruct_algorithm.class_object.class_bundle import Pair
+    from class_object import Pair
     p = Pair(3, 4)
     print(p)
     print('p is {0!r}'.format(p))
@@ -9,7 +9,7 @@ def test_repr_str():
 
 
 def test_custom_date_format():
-    from datastruct_algorithm.class_object.class_bundle import Date
+    from class_object import Date
     from datetime import date
     d = date.today()
     d = Date(d.year, d.month, d.day)
@@ -21,7 +21,7 @@ def test_custom_date_format():
 def test_lazy_connection():
     from functools import partial
 
-    from datastruct_algorithm.class_object.class_bundle import LazyConnection
+    from class_object import LazyConnection
     conn = LazyConnection(('www.python.com', 80))
 
     with conn as s:
@@ -33,7 +33,7 @@ def test_lazy_connection():
 
 
 def test_circle():
-    from datastruct_algorithm.class_object.class_bundle import Circle
+    from class_object import Circle
     c = Circle(4.0)
     print(c.radius)
     print(c.area)
@@ -41,21 +41,20 @@ def test_circle():
 
 
 def test_extend():
-    from datastruct_algorithm.class_object.class_bundle import B
     # print(B.__mro__)
-    from datastruct_algorithm.class_object.class_bundle import SubPerson
+    from class_object import SubPerson
     s = SubPerson('Guido')
     print(s)
 
 
 def test_descriptor():
-    from datastruct_algorithm.class_object.class_bundle import Stock
+    from class_object import Stock
     s = Stock('a', 10, 15.0)
     print(s)
 
 
 def test_lazyproperty():
-    from datastruct_algorithm.class_object.class_bundle import Circle
+    from class_object import Circle
     c = Circle(4.0)
     print(vars(c))
     print(c.area)
@@ -66,7 +65,7 @@ def test_lazyproperty():
 
 
 def test_sorteditems():
-    from datastruct_algorithm.class_object.class_bundle import SortedItems
+    from class_object import SortedItems
     items = SortedItems([5, 1, 3])
     print(list(items))
     items.add(2)
@@ -82,13 +81,13 @@ def test_proxy():
             print('Spam.bar:', self.x, y)
 
     s = Spam(2)
-    from datastruct_algorithm.class_object.class_bundle import Proxy
+    from class_object import Proxy
     p = Proxy(s)
     print(p.x)
 
 
 def test_mixin():
-    from datastruct_algorithm.class_object.class_bundle import LoggedMappingMixin
+    from class_object import LoggedMappingMixin
     class LoggedDict(LoggedMappingMixin, dict):
         pass
 
@@ -99,7 +98,7 @@ def test_mixin():
 
     from collections import defaultdict
 
-    from datastruct_algorithm.class_object.class_bundle import SetOnceMappingMixin
+    from class_object import SetOnceMappingMixin
     class SetOnceDefaultDict(SetOnceMappingMixin, defaultdict):
         pass
 
@@ -110,7 +109,7 @@ def test_mixin():
 
 
 def test_state():
-    from datastruct_algorithm.class_object.class_bundle import Connection1
+    from class_object import Connection1
     c = Connection1()
     print(c._state)
     c.open()
@@ -122,7 +121,7 @@ def test_state():
 
 
 def test_getattr():
-    from datastruct_algorithm.class_object.class_bundle import Point
+    from class_object import Point
     p = Point(2, 3)
     d = getattr(p, 'distance')(0, 0)
     print(d)
@@ -145,9 +144,9 @@ def test_getattr():
 
 
 def test_visitor():
-    from datastruct_algorithm.class_object.class_bundle import Number
-    from datastruct_algorithm.class_object.class_bundle import Add
-    from datastruct_algorithm.class_object.class_bundle import Evaluator
+    from class_object import Number
+    from class_object import Add
+    from class_object import Evaluator
     a = Number(0)
     for n in range(1, 100000):
         a = Add(a, Number(n))
@@ -157,8 +156,8 @@ def test_visitor():
 
 
 def test_comparable():
-    from datastruct_algorithm.class_object.class_bundle import House
-    from datastruct_algorithm.class_object.class_bundle import Room
+    from class_object import House
+    from class_object import Room
     h1 = House('h1', 'Cape')
     h1.add_room(Room('Master Bedroom', 14, 21))
     h1.add_room(Room('Living Room', 18, 20))

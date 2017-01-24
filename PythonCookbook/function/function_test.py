@@ -1,6 +1,6 @@
 #! python3
 # -*- encoding: utf-8 -*-
-from datastruct_algorithm.function.async import inlined_async, Async
+from function import inlined_async, Async
 
 
 def avg(first, *rest):
@@ -150,7 +150,7 @@ def test_sample():
     print(f.get_n())
 
 def test_closure_instance():
-    from datastruct_algorithm.function.closure_instance import Stack
+    from function import Stack
     # s = Stack()
     # s.push(10)
     # s.push(20)
@@ -162,7 +162,7 @@ def test_closure_instance():
     from timeit import timeit
     t = Stack()
     print(timeit('t.push(1); t.pop()', 'from __main__ import t'))
-    from datastruct_algorithm.function.closure_instance import Stack2
+    from function import Stack2
     t = Stack2()
     print(timeit('t.push(1); t.pop()', 'from __main__ import t'))
 

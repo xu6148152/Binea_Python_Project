@@ -153,7 +153,6 @@ def test_textwrap():
     print(textwrap.fill(s, 40, initial_indent='  '))
     print(textwrap.fill(s, 40, subsequent_indent='  '))
 
-    import os
     # os.get_terminal_size().columns
 
 
@@ -312,7 +311,7 @@ def test_serial():
     print(pickle.load(f))
 
 def test_countdown():
-    from datastruct_algorithm import countdown
+    from class_object import countdown
     c = countdown.Countdown(30)
     print(c)
     f = open('cstate.p', 'wb')

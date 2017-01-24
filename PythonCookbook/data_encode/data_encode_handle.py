@@ -1,11 +1,9 @@
 #! python3
 # -*- encoding: utf-8 -*-
-import xml
 
 
 def test_stock_csv():
     import csv
-    import re
     from collections import namedtuple
     with open('AMEX.csv') as f:
         f_csv = csv.reader(f)
@@ -222,9 +220,9 @@ def read_polys(filename):
 
     polys = []
     with open(filename, 'rb') as f:
-        from datastruct_algorithm.poly_parser import PolyHeader
-        from datastruct_algorithm.poly_parser import SizeRecord
-        from datastruct_algorithm.poly_parser import Point
+        from data_encode.poly_parser import PolyHeader
+        from data_encode.poly_parser import SizeRecord
+        from data_encode.poly_parser import Point
         phead = PolyHeader.from_file(f)
         for n in range(phead.num_polys):
             rec = SizeRecord.from_file(f, '<i')
