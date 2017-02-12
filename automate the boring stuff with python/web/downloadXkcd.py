@@ -25,6 +25,7 @@ while not url.endswith('#'):
         for chunk in res.iter_content(100000):
             imageFile.write(chunk)
         imageFile.close()
+
     # Get the Prev button's url'
     prevLink = soup.select('a[rel="prev"]')[0]
     url = 'http://xkcd.com' + prevLink.get('href')            

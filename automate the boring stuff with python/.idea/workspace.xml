@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07202282-b2ee-4562-ae2b-5933b9f87a29" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/csv_handle/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/csv_handle/csv_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/csv_handle/example.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/csv_handle/removeCsvHeader.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json_handle/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json_handle/json_test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/json_handle/quickWeather.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/email_msg/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer_test/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/timer_test/stopwatch.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/downloadXkcd.py" afterPath="$PROJECT_DIR$/web/downloadXkcd.py" />
     </list>
     <ignored path="automate the boring stuff with python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,26 +59,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="text_xlsx_converter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/excel_handle/text_xlsx_converter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pdf_handle.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pdf_handle/pdf_handle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1634">
-              <caret line="86" column="30" lean-forward="false" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="combinePdfs.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pdf_handle/combinePdfs.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,11 +111,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quickWeather.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="quickWeather.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/json_handle/quickWeather.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
-              <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stopwatch.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/timer_test/stopwatch.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="downloadXkcd.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/downloadXkcd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -220,6 +217,8 @@
         <option value="$PROJECT_DIR$/csv_handle/removeCsvHeader.py" />
         <option value="$PROJECT_DIR$/json_handle/json_test.py" />
         <option value="$PROJECT_DIR$/json_handle/quickWeather.py" />
+        <option value="$PROJECT_DIR$/timer_test/stopwatch.py" />
+        <option value="$PROJECT_DIR$/web/downloadXkcd.py" />
       </list>
     </option>
   </component>
@@ -263,6 +262,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="automate the boring stuff with python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automate the boring stuff with python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automate the boring stuff with python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automate the boring stuff with python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="automate the boring stuff with python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="email_msg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -635,9 +662,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-197" y="-1057" width="1920" height="1057" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27083334" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27083334" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35931173" sideWeight="0.53541666" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -685,8 +712,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/shelve.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/ntpath.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/os.py" />
     <entry file="file://$PROJECT_DIR$/dir/backup2Zip.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -947,7 +972,23 @@
     <entry file="file://$PROJECT_DIR$/json_handle/quickWeather.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/timer_test/stopwatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/downloadXkcd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
