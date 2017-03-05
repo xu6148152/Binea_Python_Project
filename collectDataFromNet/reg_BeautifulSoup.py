@@ -4,6 +4,7 @@ from urllib.request import urlopen
 import re
 import datetime
 import random
+import pymysql
 
 random.seed(datetime.datetime.now())
 
