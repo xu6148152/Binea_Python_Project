@@ -1,4 +1,5 @@
 import pprint
+import collections
 
 info = '''SCENE I. Yorkshire. Gaultree Forest.
 Enter the ARCHBISHOP OF YORK, MOWBRAY, LORD HASTINGS, and others
@@ -284,9 +285,21 @@ Their cold intent, tenor and substance, thus:
                         Before, and greet his grace: my lord, we come.
                         Exeunt'''
 
-count = {}
-for character in info.upper():
-    count[character]=count.get(character,0)+1
+def count1():
+    count = {}
+    for character in info.upper():
+        count[character]=count.get(character,0)+1
+        value = pprint.pformat(count)
+        print(value)
 
-value = pprint.pformat(count)
-print(value)
+def count2(filePath):
+    try:
+        with open(filePath, 'r') as file:
+            count = collections.Counter(file.read().upper())
+        value = pprint.pformat(count)
+        print(value)
+    except FileNotFoundError as e:
+        print("Can't find file")
+    
+if __name__ == '__main__':
+    count2('genSQL.py')
