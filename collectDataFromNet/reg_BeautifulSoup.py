@@ -4,7 +4,6 @@ from urllib.request import urlopen
 import re
 import datetime
 import random
-import pymysql
 
 random.seed(datetime.datetime.now())
 
@@ -134,6 +133,10 @@ def test_getLinks():
 def test_followExternalOnly():
     followExternalOnly("http://oreilly.com")
 
+def test_utf8_encode():
+    textPage = requests.get("http://www.pythonscraping.com/pages/warandpeace/chapter1-ru.txt")
+    print(str(textPage.content), 'utf-8')
+
 
 if __name__ == '__main__':
-    test_followExternalOnly()
+    test_utf8_encode()
