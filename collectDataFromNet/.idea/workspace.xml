@@ -14,6 +14,7 @@
     <SUITE FILE_PATH="coverage/collectDataFromNet$reg_BeautifulSoup.coverage" NAME="reg_BeautifulSoup Coverage Results" MODIFIED="1489216033355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/collectDataFromNet$postTest.coverage" NAME="postTest Coverage Results" MODIFIED="1489822602700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/collectDataFromNet$clean_data.coverage" NAME="clean_data Coverage Results" MODIFIED="1489300922739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/collectDataFromNet$javascriptTest.coverage" NAME="javascriptTest Coverage Results" MODIFIED="1489825128034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -21,12 +22,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="postTest.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="postTest.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postTest.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+              <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="javascriptTest.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javascriptTest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <folding>
+                <element signature="e#50#80#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,6 +65,7 @@
         <option value="$PROJECT_DIR$/clean_data.py" />
         <option value="$PROJECT_DIR$/markov_test.py" />
         <option value="$PROJECT_DIR$/postTest.py" />
+        <option value="$PROJECT_DIR$/javascriptTest.py" />
       </list>
     </option>
   </component>
@@ -108,7 +122,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="Python.postTest">
+  <component name="RunManager" selected="Python.javascriptTest">
     <configuration default="false" name="reg_BeautifulSoup" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -177,6 +191,24 @@
       <module name="collectDataFromNet" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/postTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="javascriptTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="collectDataFromNet" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/javascriptTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -395,18 +427,20 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.reg_BeautifulSoup" />
       <item index="1" class="java.lang.String" itemvalue="Python.clean_data" />
       <item index="2" class="java.lang.String" itemvalue="Python.markov_test" />
       <item index="3" class="java.lang.String" itemvalue="Python.postTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python.javascriptTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.postTest" />
-        <item index="1" class="java.lang.String" itemvalue="Python.markov_test" />
-        <item index="2" class="java.lang.String" itemvalue="Python.clean_data" />
-        <item index="3" class="java.lang.String" itemvalue="Python.reg_BeautifulSoup" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.javascriptTest" />
+        <item index="1" class="java.lang.String" itemvalue="Python.postTest" />
+        <item index="2" class="java.lang.String" itemvalue="Python.markov_test" />
+        <item index="3" class="java.lang.String" itemvalue="Python.clean_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.reg_BeautifulSoup" />
       </list>
     </recent_temporary>
   </component>
@@ -616,8 +650,26 @@
     <entry file="file://$PROJECT_DIR$/postTest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+          <caret line="36" column="38" lean-forward="false" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/selenium/webdriver/support/expected_conditions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="58" column="8" lean-forward="false" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascriptTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="e#50#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
