@@ -28,7 +28,7 @@ def test_movies():
 def test_merge_data():
     data = pd.merge(pd.merge(ratings, users), movies)
     # print(data.ix[0])
-    # mean_rating = data.pivot_table('rating', rows='title', cols='gender', aggfunc='mean')
+    mean_rating = data.pivot_table('rating', index='title', columns='gender', aggfunc='mean')
     # print(mean_rating[:5])
     ratings_by_title = data.groupby('title').size()
     # print(ratings_by_title[:10])
