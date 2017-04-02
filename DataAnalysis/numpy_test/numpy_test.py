@@ -34,6 +34,7 @@ data = randn(7, 4)
 
 arr = np.empty((8, 4))
 
+
 def test_boolean_index():
     # print(names)
     # print(data)
@@ -50,5 +51,49 @@ def test_fancy_index():
     # print(arr[[4, 3, 0, 6]])
     print(arr[[-2, -3, -7]])
 
+
+def test_transpose():
+    arr = np.arange(15).reshape((3, 5))
+    print(arr)
+    print(arr.T)
+
+
+def test_ufunc():
+    arr = np.arange(10)
+    print(np.sqrt(arr))
+
+
+def test_meshgrid():
+    points = np.arange(-5, 5, 0.01)
+    xs, ys = np.meshgrid(points, points)
+    print(ys)
+
+
+def test_where():
+    arr = randn(4, 4)
+    print(np.where(arr > 0, 2, -2))
+    print(np.where(arr > 0, 2, arr))
+
+
+def test_linalg():
+    from numpy.linalg import inv, qr
+    X = randn(5, 5)
+    mat = X.T.dot(X)
+    print(inv(mat))
+    print(mat.dot(inv(mat)))
+
+
+def test_random_walk():
+    import random
+    position = 0
+    walk = [position]
+    steps = 1000
+    for i in range(steps):
+        step = 1 if random.randint(0, 1) else -1
+        position += step
+        walk.append(position)
+    print(walk)
+
+
 if __name__ == '__main__':
-    test_fancy_index()
+    test_random_walk()
