@@ -30,7 +30,9 @@ class Vector:
         return bytes([ord(self.typecode)]) + bytes(self._components)
 
     def __eq__(self, other):
-        return len(self) == len(other) and all(a == b for a, b in zip(self, other))
+        if isinstance(other, Vector):
+            return len(self) == len(other) and all(a == b for a, b in zip(self, other))
+        return NotImplemented
 
     def __hash__(self):
         hashes = map(hash, self._components)
@@ -111,6 +113,42 @@ class Vector:
             outer_fmt = '({})'
         components = (format(c, fmt_spec) for c in coords)
         return outer_fmt.format(', '.join(components))
+
+    def __pos__(self):
+        return Vector(self)
+
+    def __add__(self, other):
+        try:
+            pairs = itertools.zip_longest(self, other, fillvalue=0.0)
+            return Vector(a + b for a, b in pairs)
+        except TypeError:
+            return NotImplemented
+
+    def __radd__(self, other):
+        return self + other
+
+    def __mul__(self, scalar):
+        if isinstance(scalar, numbers.Real):
+            return Vector(n * scalar for n in self)
+        return NotImplemented
+
+    def __rmul__(self, other):
+        return self * other
+
+    def __matmul__(self, other):
+        try:
+            return sum(a * b for a, b in zip(self, other))
+        except TypeError:
+            return NotImplemented
+
+    def __rmatmul__(self, other):
+        return self @ other
+
+    def __ne__(self, other):
+        eq_result = self == other
+        if eq_result is NotImplemented:
+            return NotImplemented
+        return not eq_result
 
 
 def test_vector():
