@@ -23,14 +23,15 @@ class FetchError(Exception):
 @asyncio.coroutine
 def get_flag(base_url, cc):
     url = '{}/{cc}/{cc}.gif'.format(base_url, cc=cc.lower())
-    resp = yield from aiohttp.request('GET', url)
-    if resp.status == 200:
-        image = yield from resp.read()
-        return image
-    elif resp.status == 404:
-        raise web.HTTPNotFound()
-    else:
-        raise aiohttp.ServerConnectionError(Exception(code=resp.status, message=resp.reason, headers=resp.headers))
+    return (yield from http_get(url))
+    # resp = yield from aiohttp.request('GET', url)
+    # if resp.status == 200:
+    #     image = yield from resp.read()
+    #     return image
+    # elif resp.status == 404:
+    #     raise web.HTTPNotFound()
+    # else:
+    #     raise aiohttp.ServerConnectionError(Exception(code=resp.status, message=resp.reason, headers=resp.headers))
 
 
 @asyncio.coroutine
@@ -38,13 +39,19 @@ def download_one(cc, base_url, semaphore, verbose):
     try:
         with (yield from semaphore):
             image = yield from get_flag(base_url, cc)
+        with (yield from semaphore):
+            country = yield from get_country(base_url, cc)
     except web.HTTPNotFound:
         status = HTTPStatus.not_found
         msg = 'not found'
     except Exception as exc:
         raise FetchError(cc) from exc
     else:
-        save_flag(image, cc.lower() + '.gif')
+        country = country.replace(' ', '_')
+        filename = '{}-{}.gif'.format(country, cc)
+        loop = asyncio.get_event_loop()
+        loop.run_in_executor(None, save_flag, image, filename)
+        # save_flag(image, cc.lower() + '.gif')
         status = HTTPStatus.ok
         msg = 'OK'
 
@@ -86,6 +93,30 @@ def download_many(cc_list, base_url, verbose, concur_req):
     loop.close()
 
     return counts
+
+
+@asyncio.coroutine
+def http_get(url):
+    res = yield from aiohttp.request('GET', url)
+    if res.status == 200:
+        ctype = res.headers.get('Content-type', '').lower()
+        if 'json' in ctype or url.endswith('json'):
+            data = yield from res.json()
+        else:
+            data = yield from res.read()
+        return data
+
+    elif res.status == 404:
+        raise web.HTTPNotFound()
+    else:
+        raise aiohttp.ServerConnectionError(Exception(code=res.status, message=res.reason, headers=res.headers))
+
+
+@asyncio.coroutine
+def get_country(base_url, cc):
+    url = '{}/{cc}/metadata.json'.format(base_url, cc=cc.lower())
+    metadata = yield from http_get(url)
+    return metadata['country']
 
 
 if __name__ == '__main__':
