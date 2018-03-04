@@ -92,3 +92,5 @@ ENV/
 
 /FluentPython/.idea/*
 FluentPython/.idea/*
+
+sample/Pipfile*
